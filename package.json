@@ -1,0 +1,33 @@
+{
+  "name": "spacex-odyssey",
+  "version": "1.0.0",
+  "description": "Coding challenge Cheef.ng",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "start:dev": "nodemon --exec babel-node index.js",
+    "test": "./node_modules/.bin/mocha --exit --timeout 20000 ./src/test --require @babel/register",
+    "lint": "./node_modules/.bin/eslint ./src --fix"
+  },
+  "author": "Tope Ajibuwa",
+  "license": "MIT",
+
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/node": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "nodemon": "^1.19.4"
+  }
+}
